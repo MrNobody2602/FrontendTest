@@ -1,5 +1,3 @@
-
-
 *{
     margin: 0;
     padding: 0;
@@ -7,43 +5,36 @@
     box-sizing: border-box;
 }
 
-/* .text-container{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 60px;
-} */
-
-.first-div {
-    padding: 0;
+.first-div{
     width: 100%;
     height: 100vh;
     background-image: url('../images/hero-banner.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+}
+
+.layout{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 50px 35px;
 }
 
-.main-header{
+.main-header nav ul{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
     list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0px;
-    padding: 0px 0px;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
+.main-header nav ul a{
     text-decoration: none;
-    font-weight: 500;
+    color: #212529;
 }
 
 .main-text{
@@ -51,24 +42,25 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    gap: 30px;
 }
 
-.main-text h1{
+.main-text h1, 
+.main-text p{
+    margin: 0;
+}
+
+.main-text h1 {
     font-family: 'Playfair Display';
-    font-size: 50px;
-    color: black;
+    font-size: 55px;
 }
 
-.main-text .sub-text{
-    margin: 0px;
-    font-family: 'Giga Sans', ui-sans-serif, system-ui;
+.main-text .sub-text {
+    font-family:'Times New Roman', Times, serif;
     font-size: 25px;
-    font-weight: 100;
+    letter-spacing: 2px;
 }
 
 .mw-responsive {
-    position: absolute;
-    bottom: 0px;
     max-width: 250px;
 }
